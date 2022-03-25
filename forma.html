@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <title>Formas</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script>
+        function dienas(){
+            var sodiena = new Date();
+            var sk = new Number(document.getElementById("extra").value);
+            sodiena.setHours(sodiena.getHours() + sk*24);
+            document.getElementById("output").value = sodiena;
+        }
+    </script>
 </head>
 <body>
     <h1>Formas un ievadlauku piemērs</h1>
     <form>
-        <p>Šodienas datums <input name="datums"></p>
+        <p>Šodienas datums <input name="datums" id="output"></p>
         <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
             <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
         </p>
         <p>Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
             <input value="RESET" type="reset">
+        </p>
+        <p>Ievadi dienu skaitu un uzzini kāds būs datums pēc tik dienām.
+            <input onclick="dienas();" name="poga" value="DATUMS" type="button">
+            <br>
+            <input id="extra" value="1" type="text">
         </p>
     </form>
     <form>
@@ -21,13 +34,14 @@
         <div>
             <input value="+" name="pluss" onclick="rez.value=sk1.value-(-sk2.value)" type="button">
             <input value="-" name="mīnuss" onclick="rez.value=sk1.value-sk2.value" type="button">
-            <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">s
+            <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
             <input value="/" name="dalīt" onclick="rez.value=sk1.value/sk2.value" type="button">
         </div>
         <div>2.skaitlis<input type="text" name="sk2"> </div>
         <hr>
         <div>Rezultāts<input name="rez"> </div>
         <input value="RESET" type="reset">
+        <a href="index.html"> Atgriezties </a>
     </form>
 </body>
 </html>
