@@ -1,0 +1,37 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Feb 18, 2022, 9:53:50 AM
+    Author     : ekazakevics
+*/
+h1 {
+   background-color: white;
+   color: black;
+   text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+li {
+    color: blue;
+}
+
+body {
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/268/726/529/stroke-artwork-abstract-coloured-lines-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 400%;
+    color: white;
+}
+
+a  {
+    color: blue;
+}
+
+.logo{
+    text-align: center;
+}    
